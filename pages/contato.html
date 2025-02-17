@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../arquivos/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../arquivos/fontawesome-free-6.2.1-web/css/all.css">
+    <style>
+      .nav-link:hover {
+          background-color: #6c757d;
+      }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="home.html"><img src="../img/banner.png" style="width: 200px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarConteudo" aria-controls="navbarConteudo" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarConteudo">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active btn btn-primary text-white ms-3 ms-sm-3" href="home.html">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link active btn btn-primary text-white ms-3 ms-sm-3" href="curso.html">
+            <i class="fas fa-graduation-cap"></i> Cursos
+          </a>
+        </li>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link active btn btn-primary text-white ms-3 ms-sm-3" href="palestrantes.html">
+            <i class="fas fa-users"></i> Palestrantes
+          </a>
+        </li>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link active btn btn-primary text-white ms-3 ms-sm-3" href="contato.html">
+            <i class="fas fa-envelope"></i> Contatos
+          </a>
+        </li>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link active btn btn-primary text-white ms-3 ms-sm-3" href="comentarios.html">
+            <i class="fas fa-comments"></i> Feedback
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 shadow-lg">
+  <h2 class="text-center mb-4 mt-4">Entre em Contato</h2>
+  <div class="row justify-content-center shadow-lg p-3 bg-secondary rounded">
+      <div class="col-md-6">
+          <form>
+              <div class="mb-3 shadow-lg p-3 bg-secondary rounded">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" required>
+              </div>
+              <div class="mb-3 shadow-lg p-3 bg-secondary rounded">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3 shadow-lg p-3 bg-secondary rounded">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+              </div>
+              <button type="button" class="btn btn-primary mb-3 mt-3"><a class="text-white text-decoration-none" href="contatoenviado.html">Enviar</a></button>
+            </form>
+      </div>
+  </div>
+
+  <div class="text-center mt-5 d-flex flex-wrap justify-content-center gap-3">
+    <h4 class="w-100">Outras formas de contato</h4>
+    <span class="d-inline-block">
+        <button class="btn btn-secondary mb-2 w-100"><i class="fas fa-phone"></i> Telefone</button>
+    </span>
+    <span class="d-inline-block">
+        <button class="btn btn-success mb-2 w-100" ><i class="fab fa-whatsapp"></i> WhatsApp</button>
+    </span>
+    <span class="d-inline-block">
+        <button class="btn btn-danger mb-2 w-100" ><i class="far fa-envelope"></i> E-mail</button>
+    </span>
+    <span class="d-inline-block">
+        <button class="btn btn-primary mb-2 w-100" ><i class="fab fa-instagram"></i> Instagram</button>
+    </span>
+    <span class="d-inline-block">
+        <button class="btn btn-info mb-2 w-100"><i class="fab fa-facebook"></i> Facebook</button>
+    </span>
+</div>
+</div>
+</div>
+
+<script src="../arquivos/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
